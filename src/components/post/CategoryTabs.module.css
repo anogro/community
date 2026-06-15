@@ -1,0 +1,35 @@
+.scrollContainer {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-bottom: 24px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs {
+  display: inline-flex;
+  gap: 12px;
+  padding: 4px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.tab.active {
+  background-color: var(--color-primary-green);
+  color: #fff;
+  border-color: var(--color-primary-green);
+  font-weight: 600;
+}
